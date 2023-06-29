@@ -1,0 +1,199 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin-left: 0%;
+    margin-top: 0%;
+}
+.header {
+    background-color: rgb(31, 30, 30);
+    width: 100%;
+    height: 70px;
+    top: 0;
+    left: 0;
+    position: fixed;
+    opacity: 0.8;
+}
+.header h1 {
+    display: inline-block;
+    width: 200px;
+    color: aqua;
+    font-size: xx-large;
+    box-sizing: border-box;
+    text-shadow: 5px 2px 3px 5px;
+    margin-top: 10px;
+    margin-left: 40px;
+    animation: gerak 5s infinite;
+    animation-iteration-count: 1;
+}
+@keyframes gerak {
+    0% {margin-left: 20px;}
+    25% {margin-left: 60px;transform: rotate(180deg);}
+    50% {margin-left: 80px;transform: rotate(180deg);}
+    75% {margin-left: 90px;transform: rotate(360deg);}
+    0% {margin-left: 100px;}
+    
+}
+.menu {
+    display: inline-block;
+    float: right;
+    margin-right: 20px;
+    position: relative;
+}
+.menu li {
+    color:white;
+    display: inline-block;
+    padding: 10px;
+    position: relative;
+}
+.menu li:hover {
+    background-color: aqua;
+    border-radius:5px;
+}
+.menu .list {
+    display: none;
+    position: absolute;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+.menu li .list li {
+    display: block;
+    margin-left: 0px;
+    margin-top: 5px;
+}
+.menu li:hover .list {
+    display: block;
+    width: 100px;
+    background-color: aqua;
+    padding-left: 0px;
+    margin-left: -2rem;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.menu li:hover ul ul {
+    display: none;
+}
+.list li:hover {
+    background-color: rgb(0, 170, 170);
+    margin-top: 0px;
+}
+.isi {
+    width: 100%;
+    height: 550px;
+    margin-top: 0;
+    margin-left: 0;
+    background-color: rgb(10, 10, 10);
+    background-image: url('https://th.bing.com/th/id/R.03fbb0ac811c2dd1ed316d2af7b64d9f?rik=%2f03PsI%2ba7h1qQQ&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fwp1908579.jpg&ehk=x75Lmd4liGu88eGQYtBJZGvc8BHhh4ASvqSVWiMUqsw%3d&risl=&pid=ImgRaw&r=0');
+    background-size: contain;
+    position: static;
+}
+.isi h1 {
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 50px;
+    color: white;
+}
+.isi h4 {
+    position: absolute;
+    margin-top: 250px;
+    margin-left: 50px;
+    color: white;
+}
+
+.gerigi1 {
+    width:100px; 
+    height:100px;
+    margin-top: 100px;
+    margin-left: 50px;
+    border-radius: 50%;
+    animation : putar 10s infinite;
+}
+@keyframes putar {
+    0% {transform :rotate(180deg);}
+    100% {transform :rotate(360deg);}
+}
+.gerigi2 {
+    width:100px; 
+    height:100px;
+    margin-top: 115px;
+    margin-left: -1rem;
+    border-radius: 50%;
+    animation : putar1 10s infinite;
+    position: absolute;
+}
+@keyframes putar1 {
+    0% {transform :rotate(-180deg);}
+    100% {transform :rotate(-360deg);}
+}
+.footer {
+    width: 100%;
+    height: 90px;
+    background-color: rgb(105, 105, 105);
+    overflow: hidden;
+}
+.footer h3 {
+    color: white;
+    margin-top: 20px;
+    margin-left: 20px;
+    display: inline-block;
+    position:absolute;
+}
+.footer img {
+    width: 50px;
+    height: 50px;
+    padding-left: 1px;
+    border-radius: 80%;
+    border: hidden;
+}
+.footer img:hover {
+    background-color: white;
+}
+.kontak {
+    display: inline-block;
+    margin-left: 130px;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+.form-login {
+    background-color: rgb(75, 74, 74);
+    width: 400px;
+    height: 250px;
+    float: right;
+    margin-right: 20px;
+    margin-top: 200px;
+    border-radius: 10px;
+    opacity: 0.9;
+}
+.form-login h3 {
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+.login {
+    padding-left: 20px;
+    padding-top: 15px;
+}
+
+.login tr td{
+    padding-top: 5px;
+    color: white;
+}
+.klik {
+    color: white;
+    background-color: rgb(107, 107, 107);
+    margin-top: 20px;
+    margin-left: 50px;
+    padding: 10px;
+    border-radius: 5px;
+    border: hidden;
+}
+.klik:hover {
+    background-color: aqua;
+    color: black;
+}
+.form-login p {
+    color: white;
+    padding-left: 5px;
+}
+.form-login p a{
+    color: aqua;
+}
